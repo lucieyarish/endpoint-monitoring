@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
-@Table(name = "monitoreing_result")
+@Table(name = "monitoring_result")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -29,7 +29,7 @@ public class MonitoringResult {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @NotNull
     @Column(name = "check_date")
